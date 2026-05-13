@@ -9,32 +9,32 @@ privacy: "{{privacy}}"
 confidence: "{{confidence}}"
 ---
 
-# Jurisdiction Map
+# Rule Layer Map
 
-## Commonwealth Or Federal Laws
+## National Rule Clues
 
 {{commonwealth_or_federal_laws}}
 
-## State Or Territory Laws
+## State Or Territory Rule Clues
 
 {{state_or_territory_laws}}
 
-## Local Council Laws And Planning Instruments
+## Local Council Rule Clues
 
 {{local_council_laws_and_planning_instruments}}
 
-## Industry Regulators
+## Agencies, Regulators Or Departments To Search
 
 {{industry_regulators}}
 
-## Ombudsman Or Complaint Bodies
+## Help, Complaint Or Review Paths To Search
 
 {{ombudsman_or_complaint_bodies}}
 
-## Courts Or Tribunals That May Matter
+## Courts Or Tribunals Mentioned Anywhere
 
 {{courts_or_tribunals}}
 
-## Uncertainty Notes
+## Confusing Words, Rules Or Agencies
 
 {{uncertainty_notes}}

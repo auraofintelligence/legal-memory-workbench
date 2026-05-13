@@ -11,7 +11,7 @@ confidence: "{{confidence}}"
 
 # Legal Question
 
-## Question
+## Plain-English Question
 
 {{plain_english_question}}
 
@@ -20,7 +20,7 @@ confidence: "{{confidence}}"
 - {{fact_1}}
 - {{fact_2}}
 
-## Sources Already Checked
+## Clues Or Sources Already Found
 
 - {{source_1}}
 - {{source_2}}
@@ -31,7 +31,7 @@ confidence: "{{confidence}}"
 
 ## Output Wanted
 
-{{summary_source_table_uncertainty_next_steps_questions_for_lawyer}}
+{{plain_english_map_source_table_uncertainty_next_steps}}
 
 ## Boundary
 

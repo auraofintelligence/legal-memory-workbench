@@ -18,6 +18,7 @@
   --shadow: 0 18px 45px rgba(16, 19, 38, 0.16);
   --radius: 8px;
   --max-width: 1160px;
+  --page-width: 1500px;
   --font-body: "Segoe UI", "Atkinson Hyperlegible", Arial, sans-serif;
   --font-heading: "Segoe UI Semibold", "Trebuchet MS", Arial, sans-serif;
 }
@@ -122,10 +123,11 @@ textarea {
 }
 
 .site-header {
-  background: rgba(16, 19, 38, 0.96);
+  background: var(--night-ink);
   border-bottom: 1px solid var(--border-dark);
+  box-shadow: 0 10px 26px rgba(16, 19, 38, 0.18);
   color: var(--paper);
-  position: sticky;
+  position: relative;
   top: 0;
   z-index: 20;
 }
@@ -343,7 +345,7 @@ textarea {
   gap: 1.5rem;
   grid-template-columns: 235px minmax(0, 1fr);
   margin: 0 auto;
-  max-width: var(--max-width);
+  max-width: var(--page-width);
   padding: 2rem 1.25rem 3.5rem;
 }
 
@@ -353,7 +355,7 @@ textarea {
   border-radius: var(--radius);
   color: var(--paper);
   position: sticky;
-  top: 5.5rem;
+  top: 1.25rem;
 }
 
 .side-nav h2 {
@@ -410,7 +412,7 @@ textarea {
 .workspace-grid {
   display: grid;
   gap: 1.25rem;
-  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.82fr);
+  grid-template-columns: minmax(460px, 1.1fr) minmax(360px, 0.9fr);
 }
 
 .worksheet-card,
@@ -438,12 +440,14 @@ textarea {
 .field {
   display: grid;
   gap: 0.35rem;
+  min-width: 0;
 }
 
 label,
 legend {
   color: var(--deep-navy);
   font-weight: 800;
+  overflow-wrap: anywhere;
 }
 
 .field-help,
@@ -460,6 +464,7 @@ textarea {
   border-radius: var(--radius);
   color: var(--ink);
   padding: 0.72rem 0.8rem;
+  min-width: 0;
   width: 100%;
 }
 
@@ -500,6 +505,22 @@ fieldset {
   background: rgba(16, 19, 38, 0.035);
 }
 
+.source-meta-grid {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.source-primary-grid {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.beginner-note {
+  background: rgba(217, 173, 85, 0.14);
+  border-left: 4px solid var(--gold);
+  border-radius: var(--radius);
+  color: var(--ink);
+  padding: 0.9rem 1rem;
+}
+
 .repeat-heading {
   align-items: center;
   display: flex;
@@ -514,7 +535,7 @@ fieldset {
   gap: 1rem;
   max-height: calc(100vh - 6rem);
   position: sticky;
-  top: 5.5rem;
+  top: 1.25rem;
 }
 
 .preview-panel h2,
@@ -626,6 +647,10 @@ fieldset {
   .nav {
     align-items: stretch;
     flex-wrap: wrap;
+  }
+
+  .site-header {
+    position: sticky;
   }
 
   .brand-mark {

@@ -36,10 +36,10 @@ This fictional example shows how a renter might prepare facts before asking an A
 - [ ] Bond lodgement details.
 - [ ] Photos, dates and repair requests.
 - [ ] Emails, texts or notices.
-- [ ] Official tenancy guidance current as-at date.
+- [ ] Date the official tenancy guidance was checked.
 
-## Questions To Prepare
+## Plain-English Questions To Explore
 
 - What official tenancy source explains the issue?
 - What facts are missing?
-- Is the decision high risk enough to contact a tenancy advice service or lawyer?
+- Is the decision high risk enough to contact a tenancy advice service, official source or lawyer?

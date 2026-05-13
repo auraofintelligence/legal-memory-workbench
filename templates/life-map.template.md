@@ -51,7 +51,7 @@ confidence: "{{confidence}}"
 
 {{clubs_charities_committees_volunteer_roles}}
 
-## Recurring Legal Questions
+## Things You Keep Wondering About
 
 - {{question_1}}
 - {{question_2}}

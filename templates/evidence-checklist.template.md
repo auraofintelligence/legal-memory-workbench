@@ -13,11 +13,11 @@ confidence: "{{confidence}}"
 
 ## Core Checks
 
-- [ ] Save copies of official source links used.
-- [ ] Record the current as-at date for each source.
-- [ ] Keep facts separate from guesses or concerns.
+- [ ] Save links or copies of any pages, letters, forms or policies that seem relevant.
+- [ ] Record the date each source was checked.
+- [ ] Keep facts separate from guesses, fears or assumptions.
 - [ ] Note who said what, when, and where documents came from.
-- [ ] Mark anything that needs professional legal advice.
+- [ ] Mark anything that feels high-risk or confusing.
 
 ## Risk-Specific Evidence
 
@@ -28,6 +28,6 @@ confidence: "{{confidence}}"
 
 {{known_evidence_gaps}}
 
-## Questions For A Lawyer, Regulator Or Official Source
+## Questions To Investigate Next
 
-{{questions_for_lawyer_regulator_or_official_source}}
+{{questions_to_investigate_next}}

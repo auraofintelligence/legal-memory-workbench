@@ -31,7 +31,7 @@ confidence: "{{confidence}}"
 - Recommend professional legal advice for high-risk decisions.
 - Preserve user privacy.
 - Explain in plain English.
-- Provide evidence checklists and questions for lawyers, regulators or official bodies.
+- Provide evidence checklists and next questions for AI follow-up, official sources, help services or legal professionals where needed.
 
 ## Topics To Avoid
 

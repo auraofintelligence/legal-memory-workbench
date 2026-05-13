@@ -36,7 +36,7 @@ This fictional example shows how a sole trader might prepare context before aski
 - Queensland work health and safety guidance.
 - Local council home business or signage rules, if relevant.
 
-## Questions To Prepare
+## Plain-English Questions To Explore
 
 - What information should be given to customers before paid work starts?
 - What records should be kept for payments, complaints and warranties?

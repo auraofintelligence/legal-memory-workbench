@@ -9,18 +9,18 @@ privacy: "{{privacy}}"
 confidence: "{{confidence}}"
 ---
 
-# Legal Sources
+# Source Trail
 
-## Source 1
+## Source Clue 1
 
-- Source name: {{source_name}}
-- Jurisdiction: {{source_jurisdiction}}
-- URL: {{source_url}}
-- Document type: {{act_regulation_local_law_planning_scheme_policy_guidance_form_case_other}}
-- Current as-at date: {{current_as_at_date}}
-- Reliability: {{official_secondary_unknown}}
+- Page, document or clue name: {{source_name}}
+- Place or rule layer: {{source_jurisdiction}}
+- URL or location: {{source_url}}
+- What kind of thing it looks like: {{act_regulation_local_law_planning_scheme_policy_guidance_form_case_other}}
+- Date checked: {{date_checked}}
+- How official it seems: {{official_secondary_unknown}}
 
-## Why It May Matter
+## What Clue It Gave
 
 {{why_it_may_matter}}
 

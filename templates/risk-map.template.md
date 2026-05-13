@@ -9,9 +9,9 @@ privacy: "{{privacy}}"
 confidence: "{{confidence}}"
 ---
 
-# Risk Map
+# Rule Friction Map
 
-## Selected Risk Categories
+## Areas Where Rules Might Appear
 
 - {{risk_category_1}}
 - {{risk_category_2}}
@@ -26,10 +26,10 @@ confidence: "{{confidence}}"
 
 {{risk_category_2_notes}}
 
-## General Risk Notes
+## Plain Notes About What Feels Uncertain
 
 {{general_risk_notes}}
 
 ## Legal Information Boundary
 
-This map helps identify questions, documents and sources to check. It is not a risk assessment by a lawyer.
+This map helps identify clues, documents, source links and next questions. It is not a legal risk assessment.

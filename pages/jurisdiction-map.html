@@ -42,47 +42,47 @@
 
       <div class="page-content">
         <section class="page-intro">
-          <h1>Identify law layers</h1>
-          <p>Most legal questions sit across more than one layer. This worksheet helps visitors list the levels to check before asking an AI assistant to explain anything.</p>
+          <h1>Find the rule layers</h1>
+          <p>Think of law like a game code layer: different rules can come from Australia, your state or territory, your council, an agency, a contract, a permit, or a form. You are not expected to know the law. This page captures clues so an AI agent can help you navigate the map.</p>
           <p class="privacy-note">The site stores this worksheet in browser storage only. It does not upload jurisdiction notes.</p>
         </section>
 
         <div class="workspace-grid">
           <section class="worksheet-card" aria-labelledby="form-title">
-            <h2 id="form-title">Jurisdiction worksheet</h2>
+            <h2 id="form-title">Rule-layer worksheet</h2>
             <form data-worksheet-form>
               <div class="field">
-                <label for="federal-laws">Commonwealth or federal laws likely relevant</label>
-                <textarea id="federal-laws" name="federalLaws"></textarea>
+                <label for="federal-laws">National rule clues</label>
+                <textarea id="federal-laws" name="federalLaws" placeholder="Write any national topics or words you have seen."></textarea>
                 <p class="field-help">Australia examples: privacy, employment, corporations, consumer law, tax, migration.</p>
               </div>
               <div class="field">
-                <label for="state-laws">State or territory laws likely relevant</label>
-                <textarea id="state-laws" name="stateLaws"></textarea>
+                <label for="state-laws">State or territory rule clues</label>
+                <textarea id="state-laws" name="stateLaws" placeholder="Write any state/territory departments, topics, forms or rules mentioned."></textarea>
                 <p class="field-help">Australia examples: WHS, tenancy, planning, environment, anti-discrimination.</p>
               </div>
               <div class="field">
-                <label for="local-laws">Local council laws or planning instruments likely relevant</label>
-                <textarea id="local-laws" name="localLaws"></textarea>
+                <label for="local-laws">Local council rule clues</label>
+                <textarea id="local-laws" name="localLaws" placeholder="Write council pages, permits, local laws or planning words you have found."></textarea>
                 <p class="field-help">Australia examples: local laws, planning scheme, permits, public spaces, animals, noise.</p>
               </div>
               <div class="field-grid two">
                 <div class="field">
-                  <label for="industry-regulators">Industry regulators</label>
-                  <textarea id="industry-regulators" name="industryRegulators"></textarea>
+                  <label for="industry-regulators">Agencies, regulators or departments to search</label>
+                  <textarea id="industry-regulators" name="industryRegulators" placeholder="Example: Fair Work, ATO, council planning, privacy regulator, tenancy authority."></textarea>
                 </div>
                 <div class="field">
-                  <label for="complaint-bodies">Ombudsman or complaint bodies</label>
-                  <textarea id="complaint-bodies" name="complaintBodies"></textarea>
+                  <label for="complaint-bodies">Help, complaint or review paths to search</label>
+                  <textarea id="complaint-bodies" name="complaintBodies" placeholder="Example: ombudsman, tribunal help page, regulator complaint form, tenancy advice service."></textarea>
                 </div>
               </div>
               <div class="field">
-                <label for="courts-tribunals">Courts or tribunals that may matter</label>
-                <textarea id="courts-tribunals" name="courtsTribunals"></textarea>
+                <label for="courts-tribunals">Courts or tribunals mentioned anywhere</label>
+                <textarea id="courts-tribunals" name="courtsTribunals" placeholder="Only fill this if a letter, website or form mentions one."></textarea>
               </div>
               <div class="field">
-                <label for="uncertainty-notes">Notes on uncertainty</label>
-                <textarea id="uncertainty-notes" name="uncertaintyNotes"></textarea>
+                <label for="uncertainty-notes">Words, rules or agencies you do not understand yet</label>
+                <textarea id="uncertainty-notes" name="uncertaintyNotes" placeholder="Write the confusing words here exactly as you found them."></textarea>
               </div>
               <div class="action-row">
                 <button class="button ghost" type="button" data-action="copy">Copy markdown</button>

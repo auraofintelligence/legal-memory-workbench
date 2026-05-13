@@ -43,7 +43,7 @@
       <div class="page-content">
         <section class="page-intro">
           <h1>Map legal surfaces in life</h1>
-          <p>This page helps visitors name the ordinary parts of life that can create legal questions. It does not decide what law applies.</p>
+          <p>This page helps visitors name ordinary life areas where rules may show up. You do not need legal language. Write the situation in plain words so an AI agent has enough context to help map the rule layer later.</p>
           <p class="privacy-note">Entries stay in this browser only unless the visitor copies or downloads them.</p>
         </section>
 
@@ -96,9 +96,9 @@
                 <textarea id="memberships" name="memberships"></textarea>
               </div>
               <fieldset>
-                <legend>Recurring legal questions</legend>
+                <legend>Things you keep wondering about</legend>
                 <div class="repeat-list" data-repeat-list="questions"></div>
-                <button class="button ghost small" type="button" data-add-repeat="questions">Add another question</button>
+                <button class="button ghost small" type="button" data-add-repeat="questions">Add another plain-English question</button>
               </fieldset>
               <div class="action-row">
                 <button class="button ghost" type="button" data-action="copy">Copy markdown</button>
@@ -122,12 +122,12 @@
     <template id="questions-template">
       <fieldset class="repeat-item" data-repeat-item="questions">
         <div class="repeat-heading">
-          <strong>Question</strong>
+          <strong>Plain-English question</strong>
           <button class="button ghost small" type="button" data-remove-repeat>Remove</button>
         </div>
         <div class="field">
-          <label>Question text</label>
-          <textarea name="questionText"></textarea>
+          <label>Write it as you would say it to a helpful person</label>
+          <textarea name="questionText" placeholder="Example: Can I run this from home? Do I need a permit? What happens if someone complains?"></textarea>
         </div>
       </fieldset>
     </template>

@@ -486,7 +486,7 @@ ${fill(data.digitalLife)}
 
 ${fill(data.memberships)}
 
-## Recurring Legal Questions
+## Things You Keep Wondering About
 
 ${repeatList(data.questions, "questionText")}
 `;
@@ -494,65 +494,69 @@ ${repeatList(data.questions, "questionText")}
 
 function generateJurisdictionMap(data, config) {
   return frontmatter(data, config) +
-`# Jurisdiction Map
+`# Rule Layer Map
 
-## Commonwealth Or Federal Laws
+## National Rule Clues
 
 ${fill(data.federalLaws)}
 
-## State Or Territory Laws
+## State Or Territory Rule Clues
 
 ${fill(data.stateLaws)}
 
-## Local Council Laws And Planning Instruments
+## Local Council Rule Clues
 
 ${fill(data.localLaws)}
 
-## Industry Regulators
+## Agencies, Regulators Or Departments To Search
 
 ${fill(data.industryRegulators)}
 
-## Ombudsman Or Complaint Bodies
+## Help, Complaint Or Review Paths To Search
 
 ${fill(data.complaintBodies)}
 
-## Courts Or Tribunals That May Matter
+## Courts Or Tribunals Mentioned Anywhere
 
 ${fill(data.courtsTribunals)}
 
-## Uncertainty Notes
+## Confusing Words, Rules Or Agencies
 
 ${fill(data.uncertaintyNotes)}
 
-## Australian Examples To Check
+## Starter Examples For Australia
 
 - Federal: privacy, employment, corporations, consumer law, tax and migration.
 - State or territory: WHS, tenancy, planning, environment and anti-discrimination.
 - Local: local laws, planning schemes, permits, public spaces, animals and noise.
+
+## Beginner Boundary
+
+This file does not assume the user knows which law applies. It records clues so an AI agent can help map the current rule layer and suggest safer next searches.
 `;
 }
 
 function generateLegalSources(data, config) {
   const sources = Array.isArray(data.sources) ? data.sources : [];
   const rows = sources.length
-    ? sources.map((source, index) => `### Source ${index + 1}: ${fill(source.sourceName, "Unnamed source")}
+    ? sources.map((source, index) => `### Source ${index + 1}: ${fill(source.sourceName, "Unnamed source clue")}
 
-- **Jurisdiction:** ${fill(source.sourceJurisdiction)}
-- **URL:** ${fill(source.sourceUrl)}
-- **Document type:** ${fill(source.documentType)}
-- **Current as-at date:** ${fill(source.asAtDate)}
-- **Reliability:** ${fill(source.reliability)}
+- **Place or rule layer:** ${fill(source.sourceJurisdiction)}
+- **URL or location:** ${fill(source.sourceUrl)}
+- **What kind of thing it looks like:** ${fill(source.documentType)}
+- **Date checked:** ${fill(source.asAtDate)}
+- **How official it seems:** ${fill(source.reliability)}
 
-**Why it may matter**
+**What clue it gave**
 
 ${fill(source.whyMatter)}
 `).join("\n")
     : "_No sources listed yet._";
 
   return frontmatter(data, config, { jurisdiction: "listed per source" }) +
-`# Legal Sources
+`# Source Trail
 
-These sources should be checked against official websites before relying on them.
+This file is a trail of clues. Some entries may be official sources. Some may be plain-English explainers, letters, forms, search results or pages that pointed toward a better source. Check official sources before relying on anything.
 
 ${rows}
 `;
@@ -619,38 +623,38 @@ function generateRiskMap(data, config) {
     : "_No risk categories selected yet._";
 
   return frontmatter(data, config) +
-`# Risk Map
+`# Rule Friction Map
 
-## Selected Risk Categories
+## Areas Where Rules Might Appear
 
 ${riskSections}
 
-## General Risk Notes
+## Plain Notes About What Feels Uncertain
 
 ${fill(data.generalRiskNotes)}
 
-## Legal Information Boundary
+## Beginner Boundary
 
-This map helps identify questions, documents and sources to check. It is not a risk assessment by a lawyer.
+This map helps identify clues, documents, source links and next questions. It is not a legal risk assessment.
 `;
 }
 
 function generateEvidenceChecklist(data, config) {
   const selected = Array.isArray(data.riskCategories) ? data.riskCategories : [];
   const items = selected.length
-    ? selected.map((key) => `- [ ] Gather documents, dates, source links and facts for ${riskLabels[key] || key}.`).join("\n")
-    : "- [ ] List the facts, dates, documents and official sources that may matter.";
+    ? selected.map((key) => `- [ ] Gather plain facts, dates, screenshots, documents, source links and questions for ${riskLabels[key] || key}.`).join("\n")
+    : "- [ ] List the facts, dates, documents, screenshots, source links and questions that may matter.";
 
   return frontmatter(data, config) +
 `# Evidence Checklist
 
 ## Core Checks
 
-- [ ] Save copies of official source links used.
-- [ ] Record the current as-at date for each source.
-- [ ] Keep facts separate from guesses or concerns.
+- [ ] Save links or copies of any pages, letters, forms or policies that seem relevant.
+- [ ] Record the date each source was checked.
+- [ ] Keep facts separate from guesses, fears or assumptions.
 - [ ] Note who said what, when, and where documents came from.
-- [ ] Mark anything that needs professional legal advice.
+- [ ] Mark anything that feels high-risk or confusing.
 
 ## Risk-Specific Evidence
 
@@ -660,7 +664,7 @@ ${items}
 
 ${fill(data.evidenceGaps)}
 
-## Questions For A Lawyer, Regulator Or Official Source
+## Questions To Investigate Next
 
 ${fill(data.escalationQuestions)}
 `;
@@ -690,7 +694,7 @@ function generateAgentInstructions(data, config) {
 - Recommend professional legal advice for high-risk decisions.
 - Preserve user privacy.
 - Explain in plain English.
-- Provide evidence checklists and questions for lawyers, regulators or official bodies.
+- Provide evidence checklists and next questions for AI follow-up, official sources, help services or legal professionals where needed.
 
 ## Topics To Avoid
 

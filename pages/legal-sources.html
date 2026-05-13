@@ -42,14 +42,15 @@
 
       <div class="page-content">
         <section class="page-intro">
-          <h1>List authoritative sources</h1>
-          <p>Use this page to collect laws, regulations, local instruments, policies, official forms and guidance. The workbench does not scrape, verify or update the sources for you.</p>
-          <p class="privacy-note">No source list is sent away. Download or copy it when you are ready.</p>
+          <h1>Collect source clues</h1>
+          <p>Use this page to save the web pages, letters, forms, policies, rules or agency pages you find along the way. You do not need to know the legal category yet. These notes help an AI agent see the current rule layer and ask better next questions.</p>
+          <p class="privacy-note">No source list is sent away. The public repo never receives visitor-filled source files.</p>
         </section>
 
         <div class="workspace-grid">
           <section class="worksheet-card" aria-labelledby="form-title">
-            <h2 id="form-title">Source register</h2>
+            <h2 id="form-title">Source trail</h2>
+            <p class="beginner-note">If you are unsure, write plain clues. Example: "This council page mentions noise permits" is useful. You can leave technical labels blank and let your AI workflow help sort them later.</p>
             <form data-worksheet-form>
               <div class="repeat-list" data-repeat-list="sources"></div>
               <button class="button ghost small" type="button" data-add-repeat="sources">Add another source</button>
@@ -75,28 +76,28 @@
     <template id="sources-template">
       <fieldset class="repeat-item" data-repeat-item="sources">
         <div class="repeat-heading">
-          <strong>Legal source</strong>
+          <strong>Source clue</strong>
           <button class="button ghost small" type="button" data-remove-repeat>Remove</button>
         </div>
-        <div class="field-grid two">
+        <div class="field-grid source-primary-grid">
           <div class="field">
-            <label>Source name</label>
-            <input name="sourceName">
+            <label>Page, document or clue name</label>
+            <input name="sourceName" placeholder="Example: Council noise permit page">
           </div>
           <div class="field">
-            <label>Jurisdiction</label>
-            <input name="sourceJurisdiction">
+            <label>Place or rule layer, if you know it</label>
+            <input name="sourceJurisdiction" placeholder="Example: Queensland, local council, Australia">
           </div>
         </div>
         <div class="field">
-          <label>URL</label>
-          <input name="sourceUrl" inputmode="url">
+          <label>URL or where you found it</label>
+          <input name="sourceUrl" inputmode="url" placeholder="Paste a link, or write where the document came from">
         </div>
-        <div class="field-grid three">
+        <div class="field-grid source-meta-grid">
           <div class="field">
-            <label>Document type</label>
+            <label>What kind of thing does it look like?</label>
             <select name="documentType">
-              <option value="">Choose one</option>
+              <option value="">Not sure yet</option>
               <option>Act</option>
               <option>Regulation</option>
               <option>Local Law</option>
@@ -107,24 +108,25 @@
               <option>Case</option>
               <option>Other</option>
             </select>
+            <p class="field-help">If the words are unfamiliar, choose "Not sure yet" and keep moving.</p>
           </div>
           <div class="field">
-            <label>Current as-at date</label>
+            <label>Date you checked it</label>
             <input name="asAtDate" type="date">
           </div>
           <div class="field">
-            <label>Reliability</label>
+            <label>How confident are you that this is official?</label>
             <select name="reliability">
-              <option value="">Choose one</option>
-              <option>Official</option>
-              <option>Secondary</option>
+              <option value="">Not sure yet</option>
+              <option>Official government, court, regulator or council page</option>
+              <option>Secondary explainer, article or guide</option>
               <option>Unknown</option>
             </select>
           </div>
         </div>
         <div class="field">
-          <label>Why it may matter</label>
-          <textarea name="whyMatter"></textarea>
+          <label>What clue did this give you?</label>
+          <textarea name="whyMatter" placeholder="Example: It mentions a permit, deadline, form, agency, fine, exemption, complaint path or rule name."></textarea>
         </div>
       </fieldset>
     </template>

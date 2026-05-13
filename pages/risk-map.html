@@ -42,17 +42,17 @@
 
       <div class="page-content">
         <section class="page-intro">
-          <h1>Identify risk categories</h1>
-          <p>This worksheet helps visitors flag legal and practical risk areas, then turn them into a risk map and evidence checklist. It is not a legal risk assessment.</p>
+          <h1>Spot rule friction</h1>
+          <p>This worksheet helps visitors notice places where rules, permissions, paperwork, safety duties, records or complaints might appear. It is not a legal risk assessment. It is a beginner map for later AI-assisted source checking.</p>
           <p class="privacy-note">Risk notes stay local to this browser. Nothing is uploaded or saved to GitHub.</p>
         </section>
 
         <div class="workspace-grid">
           <section class="worksheet-card" aria-labelledby="form-title">
-            <h2 id="form-title">Risk worksheet</h2>
+            <h2 id="form-title">Rule-friction worksheet</h2>
             <form data-worksheet-form>
               <fieldset class="checkbox-list">
-                <legend>Risk categories and notes</legend>
+                <legend>Areas where rules might appear</legend>
                 <div class="risk-item">
                   <label class="check-option"><input type="checkbox" name="riskCategories" value="privacyData"> Privacy/data</label>
                   <textarea name="note_privacyData" aria-label="Notes for privacy and data"></textarea>
@@ -111,17 +111,17 @@
                 </div>
               </fieldset>
               <div class="field">
-                <label for="general-risk-notes">General risk notes</label>
-                <textarea id="general-risk-notes" name="generalRiskNotes"></textarea>
+                  <label for="general-risk-notes">Plain notes about what feels uncertain</label>
+                  <textarea id="general-risk-notes" name="generalRiskNotes" placeholder="Write what happened, what you want to do, what could go wrong, or what you want an AI agent to help check."></textarea>
               </div>
               <div class="field-grid two">
                 <div class="field">
-                  <label for="evidence-gaps">Known evidence gaps</label>
-                  <textarea id="evidence-gaps" name="evidenceGaps"></textarea>
+                  <label for="evidence-gaps">Facts or documents you still need to find</label>
+                  <textarea id="evidence-gaps" name="evidenceGaps" placeholder="Example: dates, notices, photos, receipts, emails, permit pages, source links."></textarea>
                 </div>
                 <div class="field">
-                  <label for="escalation-questions">Questions for a lawyer, regulator or official source</label>
-                  <textarea id="escalation-questions" name="escalationQuestions"></textarea>
+                  <label for="escalation-questions">Questions to investigate next</label>
+                  <textarea id="escalation-questions" name="escalationQuestions" placeholder="Write questions for your AI agent first. Later, high-risk questions can go to an official source, help service or lawyer."></textarea>
                 </div>
               </div>
               <div class="action-row">
