@@ -422,6 +422,17 @@ textarea {
   padding: clamp(1rem, 2.2vw, 1.4rem);
 }
 
+.worksheet-card > h2,
+.disclaimer-panel > h2,
+.notice-card > h2 {
+  line-height: 1.16;
+  margin-bottom: 1.1rem;
+}
+
+.worksheet-card > h2 + .card-grid {
+  margin-top: 0.45rem;
+}
+
 .worksheet-card form,
 .field-grid,
 .form-stack {
