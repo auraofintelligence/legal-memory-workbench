@@ -21,9 +21,9 @@ const riskLabels = {
 const docConfigs = {
   "legal-memory-profile": {
     page: "start",
-    filename: "legal-memory-profile.md",
-    title: "Legal Memory Profile",
-    type: "legal-memory-profile",
+    filename: "legal-memory-starter.md",
+    title: "Legal Memory Starter",
+    type: "legal-memory-starter",
     generate: generateProfile,
   },
   "life-map": {
@@ -416,13 +416,35 @@ function frontmatter(data, config, extra = {}) {
 function generateProfile(data, config) {
   const jurisdiction = [data.country, data.stateTerritory, data.localCouncil].filter(Boolean).join(" / ") || "not set";
   return frontmatter(data, config, { jurisdiction }) +
-`# Legal Memory Profile
+`# Legal Memory Starter
 
-## Purpose
+## Start Small
 
-${fill(data.purpose, "Not filled yet.")}
+This file starts with one document, clause, source clue, situation or concern. It is not a total-life legal map.
 
-## Visitor Details
+## The Thing I Am Trying To Understand
+
+${fill(data.focusSubject)}
+
+## Fine Print, Wording Or Situation
+
+${fill(data.finePrint)}
+
+## My Current Understanding
+
+${fill(data.currentUnderstanding)}
+
+## I Want More Clarity Or Awareness About
+
+${fill(data.clarityWanted)}
+
+## Scope
+
+- **Breadth:** ${fill(data.issueScope)}
+- **Optional use lane:** ${fill(data.purpose)}
+- **First AI help wanted:** ${fill(data.firstAiHelp)}
+
+## Optional Context
 
 - **Name or alias:** ${fill(data.visitorName)}
 - **Country:** ${fill(data.country)}
@@ -432,13 +454,14 @@ ${fill(data.purpose, "Not filled yet.")}
 
 ## Use Boundary
 
-This file helps an AI legal information assistant understand the user's basic context. It does not ask the assistant to provide legal advice.
+This file helps an AI legal information assistant understand the user's starting point. It asks for plain-English mapping, source clues, missing facts and next questions. It does not ask the assistant to provide legal advice.
 
 ## Notes
 
 - Use official sources where possible.
 - Ask for missing facts before answering.
-- Treat this profile as private unless the privacy level says otherwise.
+- Keep the scope narrow unless the user chooses to expand it.
+- Treat this note as private unless the privacy level says otherwise.
 `;
 }
 
