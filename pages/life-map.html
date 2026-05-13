@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en-AU">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Life Map | Legal Memory Workbench</title>
+    <link rel="icon" href="../assets/placeholder-images/legal-workbench-notebook.png">
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body data-page="life-map" data-docs="life-map">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand-mark" href="../index.html"><span>Legal Memory</span><span>Workbench</span></a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+        <div class="nav-links" id="nav-links">
+          <a href="start.html">Start</a>
+          <a href="life-map.html" aria-current="page">Life map</a>
+          <a href="jurisdiction-map.html">Jurisdictions</a>
+          <a href="legal-sources.html">Sources</a>
+          <a href="risk-map.html">Risks</a>
+          <a href="partner-components.html">Partners</a>
+          <a href="export.html">Export</a>
+          <a href="disclaimer.html">Disclaimer</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main" class="page-shell">
+      <aside class="side-nav" aria-label="Setup pages">
+        <h2>Setup</h2>
+        <a href="start.html">Start</a>
+        <a href="life-map.html" aria-current="page">Life map</a>
+        <a href="jurisdiction-map.html">Jurisdictions</a>
+        <a href="legal-sources.html">Legal sources</a>
+        <a href="project-map.html">Project map</a>
+        <a href="risk-map.html">Risk map</a>
+        <a href="agent-instructions.html">Agent instructions</a>
+        <a href="partner-components.html">Partner components</a>
+        <a href="export.html">Export</a>
+      </aside>
+
+      <div class="page-content">
+        <section class="page-intro">
+          <h1>Map legal surfaces in life</h1>
+          <p>This page helps visitors name the ordinary parts of life that can create legal questions. It does not decide what law applies.</p>
+          <p class="privacy-note">Entries stay in this browser only unless the visitor copies or downloads them.</p>
+        </section>
+
+        <div class="workspace-grid">
+          <section class="worksheet-card" aria-labelledby="form-title">
+            <h2 id="form-title">Life map worksheet</h2>
+            <form data-worksheet-form>
+              <div class="field">
+                <label for="housing-situation">Housing situation</label>
+                <textarea id="housing-situation" name="housingSituation"></textarea>
+              </div>
+              <div class="field">
+                <label for="work-income">Work and income</label>
+                <textarea id="work-income" name="workIncome"></textarea>
+              </div>
+              <div class="field">
+                <label for="business-side-hustle">Business or side hustle</label>
+                <textarea id="business-side-hustle" name="businessSideHustle"></textarea>
+              </div>
+              <div class="field-grid two">
+                <div class="field">
+                  <label for="vehicles-boats-drones">Vehicles, boats or drones</label>
+                  <textarea id="vehicles-boats-drones" name="vehiclesBoatsDrones"></textarea>
+                </div>
+                <div class="field">
+                  <label for="pets-animals">Pets or animals</label>
+                  <textarea id="pets-animals" name="petsAnimals"></textarea>
+                </div>
+              </div>
+              <div class="field-grid two">
+                <div class="field">
+                  <label for="health-care">Health, disability or care responsibilities</label>
+                  <textarea id="health-care" name="healthCare"></textarea>
+                </div>
+                <div class="field">
+                  <label for="family-responsibilities">Children or family responsibilities</label>
+                  <textarea id="family-responsibilities" name="familyResponsibilities"></textarea>
+                </div>
+              </div>
+              <div class="field">
+                <label for="property-works">Land, property, garden or building works</label>
+                <textarea id="property-works" name="propertyWorks"></textarea>
+              </div>
+              <div class="field">
+                <label for="digital-life">Digital life: websites, social media, AI tools, data or cameras</label>
+                <textarea id="digital-life" name="digitalLife"></textarea>
+              </div>
+              <div class="field">
+                <label for="memberships">Memberships: clubs, charities, committees or volunteer roles</label>
+                <textarea id="memberships" name="memberships"></textarea>
+              </div>
+              <fieldset>
+                <legend>Recurring legal questions</legend>
+                <div class="repeat-list" data-repeat-list="questions"></div>
+                <button class="button ghost small" type="button" data-add-repeat="questions">Add another question</button>
+              </fieldset>
+              <div class="action-row">
+                <button class="button ghost" type="button" data-action="copy">Copy markdown</button>
+                <button class="button ghost" type="button" data-action="download">Download .md</button>
+                <button class="button ghost" type="button" data-action="save">Save in this browser only</button>
+                <button class="button danger" type="button" data-action="clear">Clear this form</button>
+                <a class="button-link primary" href="jurisdiction-map.html">Next page</a>
+              </div>
+              <p class="status-line" data-status aria-live="polite"></p>
+            </form>
+          </section>
+
+          <section class="preview-panel" aria-labelledby="preview-title">
+            <h2 id="preview-title">life-map.md</h2>
+            <pre class="markdown-preview"><code data-preview-doc="life-map"></code></pre>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <template id="questions-template">
+      <fieldset class="repeat-item" data-repeat-item="questions">
+        <div class="repeat-heading">
+          <strong>Question</strong>
+          <button class="button ghost small" type="button" data-remove-repeat>Remove</button>
+        </div>
+        <div class="field">
+          <label>Question text</label>
+          <textarea name="questionText"></textarea>
+        </div>
+      </fieldset>
+    </template>
+    <script src="../script.js"></script>
+  </body>
+</html>

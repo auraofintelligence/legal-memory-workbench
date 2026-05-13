@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en-AU">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Legal Sources | Legal Memory Workbench</title>
+    <link rel="icon" href="../assets/placeholder-images/legal-workbench-notebook.png">
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body data-page="legal-sources" data-docs="legal-sources">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand-mark" href="../index.html"><span>Legal Memory</span><span>Workbench</span></a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+        <div class="nav-links" id="nav-links">
+          <a href="start.html">Start</a>
+          <a href="life-map.html">Life map</a>
+          <a href="jurisdiction-map.html">Jurisdictions</a>
+          <a href="legal-sources.html" aria-current="page">Sources</a>
+          <a href="risk-map.html">Risks</a>
+          <a href="partner-components.html">Partners</a>
+          <a href="export.html">Export</a>
+          <a href="disclaimer.html">Disclaimer</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main" class="page-shell">
+      <aside class="side-nav" aria-label="Setup pages">
+        <h2>Setup</h2>
+        <a href="start.html">Start</a>
+        <a href="life-map.html">Life map</a>
+        <a href="jurisdiction-map.html">Jurisdictions</a>
+        <a href="legal-sources.html" aria-current="page">Legal sources</a>
+        <a href="project-map.html">Project map</a>
+        <a href="risk-map.html">Risk map</a>
+        <a href="agent-instructions.html">Agent instructions</a>
+        <a href="partner-components.html">Partner components</a>
+        <a href="export.html">Export</a>
+      </aside>
+
+      <div class="page-content">
+        <section class="page-intro">
+          <h1>List authoritative sources</h1>
+          <p>Use this page to collect laws, regulations, local instruments, policies, official forms and guidance. The workbench does not scrape, verify or update the sources for you.</p>
+          <p class="privacy-note">No source list is sent away. Download or copy it when you are ready.</p>
+        </section>
+
+        <div class="workspace-grid">
+          <section class="worksheet-card" aria-labelledby="form-title">
+            <h2 id="form-title">Source register</h2>
+            <form data-worksheet-form>
+              <div class="repeat-list" data-repeat-list="sources"></div>
+              <button class="button ghost small" type="button" data-add-repeat="sources">Add another source</button>
+              <div class="action-row">
+                <button class="button ghost" type="button" data-action="copy">Copy markdown</button>
+                <button class="button ghost" type="button" data-action="download">Download .md</button>
+                <button class="button ghost" type="button" data-action="save">Save in this browser only</button>
+                <button class="button danger" type="button" data-action="clear">Clear this form</button>
+                <a class="button-link primary" href="project-map.html">Next page</a>
+              </div>
+              <p class="status-line" data-status aria-live="polite"></p>
+            </form>
+          </section>
+
+          <section class="preview-panel" aria-labelledby="preview-title">
+            <h2 id="preview-title">legal-sources.md</h2>
+            <pre class="markdown-preview"><code data-preview-doc="legal-sources"></code></pre>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <template id="sources-template">
+      <fieldset class="repeat-item" data-repeat-item="sources">
+        <div class="repeat-heading">
+          <strong>Legal source</strong>
+          <button class="button ghost small" type="button" data-remove-repeat>Remove</button>
+        </div>
+        <div class="field-grid two">
+          <div class="field">
+            <label>Source name</label>
+            <input name="sourceName">
+          </div>
+          <div class="field">
+            <label>Jurisdiction</label>
+            <input name="sourceJurisdiction">
+          </div>
+        </div>
+        <div class="field">
+          <label>URL</label>
+          <input name="sourceUrl" inputmode="url">
+        </div>
+        <div class="field-grid three">
+          <div class="field">
+            <label>Document type</label>
+            <select name="documentType">
+              <option value="">Choose one</option>
+              <option>Act</option>
+              <option>Regulation</option>
+              <option>Local Law</option>
+              <option>Planning Scheme</option>
+              <option>Policy</option>
+              <option>Guidance</option>
+              <option>Form</option>
+              <option>Case</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>Current as-at date</label>
+            <input name="asAtDate" type="date">
+          </div>
+          <div class="field">
+            <label>Reliability</label>
+            <select name="reliability">
+              <option value="">Choose one</option>
+              <option>Official</option>
+              <option>Secondary</option>
+              <option>Unknown</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label>Why it may matter</label>
+          <textarea name="whyMatter"></textarea>
+        </div>
+      </fieldset>
+    </template>
+    <script src="../script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+.DS_Store
+Thumbs.db
+*.log
+.tmp/
+downloads/
+legal-memory-bundle.md
+legal-memory-profile.md
+life-map.md
+jurisdiction-map.md
+legal-sources.md
+project-map.md
+risk-map.md
+agent-instructions.md
+evidence-checklist.md

@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en-AU">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project Map | Legal Memory Workbench</title>
+    <link rel="icon" href="../assets/placeholder-images/legal-workbench-notebook.png">
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body data-page="project-map" data-docs="project-map">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand-mark" href="../index.html"><span>Legal Memory</span><span>Workbench</span></a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+        <div class="nav-links" id="nav-links">
+          <a href="start.html">Start</a>
+          <a href="life-map.html">Life map</a>
+          <a href="jurisdiction-map.html">Jurisdictions</a>
+          <a href="legal-sources.html">Sources</a>
+          <a href="risk-map.html">Risks</a>
+          <a href="partner-components.html">Partners</a>
+          <a href="export.html">Export</a>
+          <a href="disclaimer.html">Disclaimer</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main" class="page-shell">
+      <aside class="side-nav" aria-label="Setup pages">
+        <h2>Setup</h2>
+        <a href="start.html">Start</a>
+        <a href="life-map.html">Life map</a>
+        <a href="jurisdiction-map.html">Jurisdictions</a>
+        <a href="legal-sources.html">Legal sources</a>
+        <a href="project-map.html" aria-current="page">Project map</a>
+        <a href="risk-map.html">Risk map</a>
+        <a href="agent-instructions.html">Agent instructions</a>
+        <a href="partner-components.html">Partner components</a>
+        <a href="export.html">Export</a>
+      </aside>
+
+      <div class="page-content">
+        <section class="page-intro">
+          <h1>Map a project</h1>
+          <p>This page is for a business, club, event, property issue, community idea or other project that needs a legal information assistant with clear context.</p>
+          <p class="privacy-note">Project notes stay in this browser. They are not committed to GitHub.</p>
+        </section>
+
+        <div class="workspace-grid">
+          <section class="worksheet-card" aria-labelledby="form-title">
+            <h2 id="form-title">Project worksheet</h2>
+            <form data-worksheet-form>
+              <div class="field">
+                <label for="project-name">Project name</label>
+                <input id="project-name" name="projectName">
+              </div>
+              <div class="field">
+                <label for="project-summary">Project summary</label>
+                <textarea id="project-summary" name="projectSummary"></textarea>
+              </div>
+              <div class="field-grid two">
+                <div class="field">
+                  <label for="involved-people">Who is involved</label>
+                  <textarea id="involved-people" name="involvedPeople"></textarea>
+                </div>
+                <div class="field">
+                  <label for="project-location">Where it happens</label>
+                  <textarea id="project-location" name="projectLocation"></textarea>
+                </div>
+              </div>
+              <div class="field">
+                <label for="activities">Activities</label>
+                <textarea id="activities" name="activities"></textarea>
+              </div>
+              <div class="field-grid two">
+                <div class="field">
+                  <label for="assets-equipment">Assets or equipment</label>
+                  <textarea id="assets-equipment" name="assetsEquipment"></textarea>
+                </div>
+                <div class="field">
+                  <label for="money-volunteers">Money, payment or volunteers</label>
+                  <textarea id="money-volunteers" name="moneyVolunteers"></textarea>
+                </div>
+              </div>
+              <div class="field-grid two">
+                <div class="field">
+                  <label for="public-interaction">Public interaction</label>
+                  <textarea id="public-interaction" name="publicInteraction"></textarea>
+                </div>
+                <div class="field">
+                  <label for="data-collected">Data collected</label>
+                  <textarea id="data-collected" name="dataCollected"></textarea>
+                </div>
+              </div>
+              <div class="field">
+                <label for="permits-approvals">Permits or approvals suspected</label>
+                <textarea id="permits-approvals" name="permitsApprovals"></textarea>
+              </div>
+              <div class="field-grid two">
+                <div class="field">
+                  <label for="known-constraints">Known constraints</label>
+                  <textarea id="known-constraints" name="knownConstraints"></textarea>
+                </div>
+                <div class="field">
+                  <label for="desired-outcome">Desired outcome</label>
+                  <textarea id="desired-outcome" name="desiredOutcome"></textarea>
+                </div>
+              </div>
+              <div class="action-row">
+                <button class="button ghost" type="button" data-action="copy">Copy markdown</button>
+                <button class="button ghost" type="button" data-action="download">Download .md</button>
+                <button class="button ghost" type="button" data-action="save">Save in this browser only</button>
+                <button class="button danger" type="button" data-action="clear">Clear this form</button>
+                <a class="button-link primary" href="risk-map.html">Next page</a>
+              </div>
+              <p class="status-line" data-status aria-live="polite"></p>
+            </form>
+          </section>
+
+          <section class="preview-panel" aria-labelledby="preview-title">
+            <h2 id="preview-title">project-map.md</h2>
+            <pre class="markdown-preview"><code data-preview-doc="project-map"></code></pre>
+          </section>
+        </div>
+      </div>
+    </main>
+    <script src="../script.js"></script>
+  </body>
+</html>

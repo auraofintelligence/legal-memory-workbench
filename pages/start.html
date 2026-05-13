@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en-AU">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Start The Setup | Legal Memory Workbench</title>
+    <link rel="icon" href="../assets/placeholder-images/legal-workbench-notebook.png">
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body data-page="start" data-docs="legal-memory-profile">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand-mark" href="../index.html"><span>Legal Memory</span><span>Workbench</span></a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+        <div class="nav-links" id="nav-links">
+          <a href="start.html" aria-current="page">Start</a>
+          <a href="life-map.html">Life map</a>
+          <a href="jurisdiction-map.html">Jurisdictions</a>
+          <a href="legal-sources.html">Sources</a>
+          <a href="risk-map.html">Risks</a>
+          <a href="partner-components.html">Partners</a>
+          <a href="export.html">Export</a>
+          <a href="disclaimer.html">Disclaimer</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main" class="page-shell">
+      <aside class="side-nav" aria-label="Setup pages">
+        <h2>Setup</h2>
+        <a href="start.html" aria-current="page">Start</a>
+        <a href="life-map.html">Life map</a>
+        <a href="jurisdiction-map.html">Jurisdictions</a>
+        <a href="legal-sources.html">Legal sources</a>
+        <a href="project-map.html">Project map</a>
+        <a href="risk-map.html">Risk map</a>
+        <a href="agent-instructions.html">Agent instructions</a>
+        <a href="partner-components.html">Partner components</a>
+        <a href="export.html">Export</a>
+      </aside>
+
+      <div class="page-content">
+        <section class="page-intro">
+          <h1>Start the setup</h1>
+          <p>Step 1 maps your life or project. Step 2 identifies jurisdictions. Step 3 lists possible legal sources. Step 4 defines risks and questions. Step 5 exports markdown for your own AI legal information assistant.</p>
+          <p class="privacy-note">This static site only saves entries inside this browser. It does not send visitor data to GitHub or any server.</p>
+        </section>
+
+        <div class="workspace-grid">
+          <section class="worksheet-card" aria-labelledby="form-title">
+            <h2 id="form-title">Basic profile</h2>
+            <form data-worksheet-form>
+              <div class="field-grid two">
+                <div class="field">
+                  <label for="visitor-name">Visitor name or alias</label>
+                  <input id="visitor-name" name="visitorName" autocomplete="name">
+                </div>
+                <div class="field">
+                  <label for="country">Country</label>
+                  <input id="country" name="country" autocomplete="country-name" value="">
+                </div>
+              </div>
+              <div class="field-grid two">
+                <div class="field">
+                  <label for="state-territory">State or territory</label>
+                  <input id="state-territory" name="stateTerritory" autocomplete="address-level1">
+                </div>
+                <div class="field">
+                  <label for="local-council">Council or local government area</label>
+                  <input id="local-council" name="localCouncil" autocomplete="address-level2">
+                </div>
+              </div>
+              <div class="field-grid two">
+                <div class="field">
+                  <label for="purpose">Purpose</label>
+                  <select id="purpose" name="purpose">
+                    <option value="">Choose one</option>
+                    <option>Personal</option>
+                    <option>Household</option>
+                    <option>Business</option>
+                    <option>Community group</option>
+                    <option>Project</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="privacy-level">Privacy level</label>
+                  <select id="privacy-level" name="privacyLevel">
+                    <option value="">Choose one</option>
+                    <option>Private</option>
+                    <option>Shareable</option>
+                    <option>Public</option>
+                  </select>
+                </div>
+              </div>
+              <div class="action-row">
+                <button class="button ghost" type="button" data-action="copy">Copy markdown</button>
+                <button class="button ghost" type="button" data-action="download">Download .md</button>
+                <button class="button ghost" type="button" data-action="save">Save in this browser only</button>
+                <button class="button danger" type="button" data-action="clear">Clear this form</button>
+                <a class="button-link primary" href="life-map.html">Next page</a>
+              </div>
+              <p class="status-line" data-status aria-live="polite"></p>
+            </form>
+          </section>
+
+          <section class="preview-panel" aria-labelledby="preview-title">
+            <h2 id="preview-title">legal-memory-profile.md</h2>
+            <pre class="markdown-preview"><code data-preview-doc="legal-memory-profile"></code></pre>
+          </section>
+        </div>
+      </div>
+    </main>
+    <script src="../script.js"></script>
+  </body>
+</html>

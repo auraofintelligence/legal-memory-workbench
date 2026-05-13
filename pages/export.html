@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en-AU">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Export Markdown | Legal Memory Workbench</title>
+    <link rel="icon" href="../assets/placeholder-images/legal-workbench-notebook.png">
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body data-page="export">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand-mark" href="../index.html"><span>Legal Memory</span><span>Workbench</span></a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+        <div class="nav-links" id="nav-links">
+          <a href="start.html">Start</a>
+          <a href="life-map.html">Life map</a>
+          <a href="jurisdiction-map.html">Jurisdictions</a>
+          <a href="legal-sources.html">Sources</a>
+          <a href="risk-map.html">Risks</a>
+          <a href="partner-components.html">Partners</a>
+          <a href="export.html" aria-current="page">Export</a>
+          <a href="disclaimer.html">Disclaimer</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main" class="page-shell">
+      <aside class="side-nav" aria-label="Setup pages">
+        <h2>Setup</h2>
+        <a href="start.html">Start</a>
+        <a href="life-map.html">Life map</a>
+        <a href="jurisdiction-map.html">Jurisdictions</a>
+        <a href="legal-sources.html">Legal sources</a>
+        <a href="project-map.html">Project map</a>
+        <a href="risk-map.html">Risk map</a>
+        <a href="agent-instructions.html">Agent instructions</a>
+        <a href="partner-components.html">Partner components</a>
+        <a href="export.html" aria-current="page">Export</a>
+      </aside>
+
+      <div class="page-content">
+        <section class="page-intro">
+          <h1>Export local markdown</h1>
+          <p>Review every generated document, copy the bundle, download individual files, download one combined file, print, or clear local browser data.</p>
+          <p class="privacy-note">Export happens inside the browser. There is no server-side zip, database, GitHub write action, analytics or remote storage.</p>
+        </section>
+
+        <section class="worksheet-card" aria-labelledby="export-actions-title">
+          <h2 id="export-actions-title">Bundle controls</h2>
+          <div class="action-row">
+            <button class="button ghost" type="button" data-export-copy-all>Copy all markdown</button>
+            <button class="button ghost" type="button" data-export-download-all>Download combined legal-memory-bundle.md</button>
+            <button class="button ghost" type="button" data-export-print>Print page</button>
+            <button class="button danger" type="button" data-export-clear-all>Clear all local data</button>
+          </div>
+          <p class="status-line" data-status aria-live="polite"></p>
+        </section>
+
+        <section class="export-grid" data-export-root aria-label="Generated markdown documents"></section>
+      </div>
+    </main>
+    <script src="../script.js"></script>
+  </body>
+</html>

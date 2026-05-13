@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en-AU">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Risk Map | Legal Memory Workbench</title>
+    <link rel="icon" href="../assets/placeholder-images/legal-workbench-notebook.png">
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body data-page="risk-map" data-docs="risk-map,evidence-checklist">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand-mark" href="../index.html"><span>Legal Memory</span><span>Workbench</span></a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+        <div class="nav-links" id="nav-links">
+          <a href="start.html">Start</a>
+          <a href="life-map.html">Life map</a>
+          <a href="jurisdiction-map.html">Jurisdictions</a>
+          <a href="legal-sources.html">Sources</a>
+          <a href="risk-map.html" aria-current="page">Risks</a>
+          <a href="partner-components.html">Partners</a>
+          <a href="export.html">Export</a>
+          <a href="disclaimer.html">Disclaimer</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main" class="page-shell">
+      <aside class="side-nav" aria-label="Setup pages">
+        <h2>Setup</h2>
+        <a href="start.html">Start</a>
+        <a href="life-map.html">Life map</a>
+        <a href="jurisdiction-map.html">Jurisdictions</a>
+        <a href="legal-sources.html">Legal sources</a>
+        <a href="project-map.html">Project map</a>
+        <a href="risk-map.html" aria-current="page">Risk map</a>
+        <a href="agent-instructions.html">Agent instructions</a>
+        <a href="partner-components.html">Partner components</a>
+        <a href="export.html">Export</a>
+      </aside>
+
+      <div class="page-content">
+        <section class="page-intro">
+          <h1>Identify risk categories</h1>
+          <p>This worksheet helps visitors flag legal and practical risk areas, then turn them into a risk map and evidence checklist. It is not a legal risk assessment.</p>
+          <p class="privacy-note">Risk notes stay local to this browser. Nothing is uploaded or saved to GitHub.</p>
+        </section>
+
+        <div class="workspace-grid">
+          <section class="worksheet-card" aria-labelledby="form-title">
+            <h2 id="form-title">Risk worksheet</h2>
+            <form data-worksheet-form>
+              <fieldset class="checkbox-list">
+                <legend>Risk categories and notes</legend>
+                <div class="risk-item">
+                  <label class="check-option"><input type="checkbox" name="riskCategories" value="privacyData"> Privacy/data</label>
+                  <textarea name="note_privacyData" aria-label="Notes for privacy and data"></textarea>
+                </div>
+                <div class="risk-item">
+                  <label class="check-option"><input type="checkbox" name="riskCategories" value="employmentContractorsVolunteers"> Employment/contractors/volunteers</label>
+                  <textarea name="note_employmentContractorsVolunteers" aria-label="Notes for employment, contractors and volunteers"></textarea>
+                </div>
+                <div class="risk-item">
+                  <label class="check-option"><input type="checkbox" name="riskCategories" value="consumerLaw"> Consumer law</label>
+                  <textarea name="note_consumerLaw" aria-label="Notes for consumer law"></textarea>
+                </div>
+                <div class="risk-item">
+                  <label class="check-option"><input type="checkbox" name="riskCategories" value="safetyWhs"> Safety/WHS</label>
+                  <textarea name="note_safetyWhs" aria-label="Notes for safety and WHS"></textarea>
+                </div>
+                <div class="risk-item">
+                  <label class="check-option"><input type="checkbox" name="riskCategories" value="insurance"> Insurance</label>
+                  <textarea name="note_insurance" aria-label="Notes for insurance"></textarea>
+                </div>
+                <div class="risk-item">
+                  <label class="check-option"><input type="checkbox" name="riskCategories" value="permitsLicences"> Permits/licences</label>
+                  <textarea name="note_permitsLicences" aria-label="Notes for permits and licences"></textarea>
+                </div>
+                <div class="risk-item">
+                  <label class="check-option"><input type="checkbox" name="riskCategories" value="planningBuildingEnvironment"> Planning/building/environment</label>
+                  <textarea name="note_planningBuildingEnvironment" aria-label="Notes for planning, building and environment"></textarea>
+                </div>
+                <div class="risk-item">
+                  <label class="check-option"><input type="checkbox" name="riskCategories" value="childrenVulnerablePeople"> Children/vulnerable people</label>
+                  <textarea name="note_childrenVulnerablePeople" aria-label="Notes for children and vulnerable people"></textarea>
+                </div>
+                <div class="risk-item">
+                  <label class="check-option"><input type="checkbox" name="riskCategories" value="discriminationAccessibility"> Discrimination/accessibility</label>
+                  <textarea name="note_discriminationAccessibility" aria-label="Notes for discrimination and accessibility"></textarea>
+                </div>
+                <div class="risk-item">
+                  <label class="check-option"><input type="checkbox" name="riskCategories" value="copyrightMedia"> Copyright/media</label>
+                  <textarea name="note_copyrightMedia" aria-label="Notes for copyright and media"></textarea>
+                </div>
+                <div class="risk-item">
+                  <label class="check-option"><input type="checkbox" name="riskCategories" value="defamationReputation"> Defamation/reputation</label>
+                  <textarea name="note_defamationReputation" aria-label="Notes for defamation and reputation"></textarea>
+                </div>
+                <div class="risk-item">
+                  <label class="check-option"><input type="checkbox" name="riskCategories" value="financialTax"> Financial/tax</label>
+                  <textarea name="note_financialTax" aria-label="Notes for financial and tax"></textarea>
+                </div>
+                <div class="risk-item">
+                  <label class="check-option"><input type="checkbox" name="riskCategories" value="governanceConflicts"> Governance/conflicts of interest</label>
+                  <textarea name="note_governanceConflicts" aria-label="Notes for governance and conflicts"></textarea>
+                </div>
+                <div class="risk-item">
+                  <label class="check-option"><input type="checkbox" name="riskCategories" value="evidenceDocumentation"> Evidence/documentation gaps</label>
+                  <textarea name="note_evidenceDocumentation" aria-label="Notes for evidence and documentation gaps"></textarea>
+                </div>
+              </fieldset>
+              <div class="field">
+                <label for="general-risk-notes">General risk notes</label>
+                <textarea id="general-risk-notes" name="generalRiskNotes"></textarea>
+              </div>
+              <div class="field-grid two">
+                <div class="field">
+                  <label for="evidence-gaps">Known evidence gaps</label>
+                  <textarea id="evidence-gaps" name="evidenceGaps"></textarea>
+                </div>
+                <div class="field">
+                  <label for="escalation-questions">Questions for a lawyer, regulator or official source</label>
+                  <textarea id="escalation-questions" name="escalationQuestions"></textarea>
+                </div>
+              </div>
+              <div class="action-row">
+                <button class="button ghost" type="button" data-action="copy" data-doc-id="all-current">Copy both markdown files</button>
+                <button class="button ghost" type="button" data-action="download" data-doc-id="risk-map">Download risk-map.md</button>
+                <button class="button ghost" type="button" data-action="download" data-doc-id="evidence-checklist">Download evidence-checklist.md</button>
+                <button class="button ghost" type="button" data-action="save">Save in this browser only</button>
+                <button class="button danger" type="button" data-action="clear">Clear this form</button>
+                <a class="button-link primary" href="agent-instructions.html">Next page</a>
+              </div>
+              <p class="status-line" data-status aria-live="polite"></p>
+            </form>
+          </section>
+
+          <section class="preview-panel" aria-labelledby="preview-title">
+            <h2 id="preview-title">Risk outputs</h2>
+            <div class="preview-stack">
+              <div>
+                <h3>risk-map.md</h3>
+                <pre class="markdown-preview"><code data-preview-doc="risk-map"></code></pre>
+              </div>
+              <div>
+                <h3>evidence-checklist.md</h3>
+                <pre class="markdown-preview"><code data-preview-doc="evidence-checklist"></code></pre>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <script src="../script.js"></script>
+  </body>
+</html>
